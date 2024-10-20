@@ -1,0 +1,39 @@
+body {
+    background-color: #000000; /* Black background */
+    color: #FFD700; /* Gold text */
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #333333; /* Darker background for the container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, label {
+    color: #FFD700; /* Gold color for headings and labels */
+}
+
+.btn-primary {
+    background-color: #FFD700; /* Gold button */
+    border-color: #FFD700;
+    color: #000000; /* Black text on the button */
+}
+
+.btn-primary:hover {
+    background-color: #FFC700; /* Lighter gold on hover */
+    border-color: #FFC700;
+}
+
+.form-control {
+    background-color: #222222; /* Darker input background */
+    color: #FFD700; /* Gold text */
+    border: 1px solid #FFD700; /* Gold border */
+}
+
+.alert {
+    background-color: #FFD700; /* Gold background for alert */
+    color: #000000; /* Black text for alert */
+}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <form action="{{ url_for('submit') }}" method="POST">
+        <div class="mb-3">
+            <label for="student_name" class="form-label">Student Name</label>
+            <input type="text" class="form-control" id="student_name" name="student_name" required>
+        </div>
+        <div class="mb-3">
+            <label for="student_id" class="form-label">Student ID</label>
+            <input type="text" class="form-control" id="student_id" name="student_id" required>
+        </div>
+        <div class="mb-3">
+            <label for="course_name" class="form-label">Course Name</label>
+            <input type="text" class="form-control" id="course_name" name="course_name" required>
+        </div>
+        <div class="mb-3">
+            <label for="course_number" class="form-label">Course Number</label>
+            <input type="text" class="form-control" id="course_number" name="course_number" required>
+        </div>
+        <div class="mb-3">
+            <label for="justification" class="form-label">Justification</label>
+            <textarea class="form-control" id="justification" name="justification"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    {% if get_flashed_messages() %}
+    <div class="alert alert-success mt-3">
+        {{ get_flashed_messages()[0] }}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
